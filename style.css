@@ -319,7 +319,7 @@ h1 {
 
 @media screen and (max-width: 840px){
 	html {
-		font: 12pt;
+		font-size: 12pt;
 	}
 	
 	.center {
