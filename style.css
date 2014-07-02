@@ -1,4 +1,9 @@
 /*
+	Homepage by Emily !66666666Ok/E66666666
+	pls (dont) steel
+*/
+
+/*
 	Backgrounds
 */
 
@@ -38,6 +43,11 @@ html{
 	background: url('backgrounds/bg1.jpg') fixed center / cover;
 	height: 100%;
 	min-height: 100%;
+}
+
+#bottom-margin{
+	clear: both;
+	height: 20px;
 }
 
 #title{
@@ -272,9 +282,9 @@ h1 {
 	Search
 */
 
-
 .searchContainer {
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .searchForm {
