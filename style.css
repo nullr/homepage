@@ -6,7 +6,15 @@
 .bgd2:root { background-image: url(backgrounds/bgd2.jpg); } 
 .bgd3:root { background-image: url(backgrounds/bgd3.jpg); } 
 .bgd4:root { background-image: url(backgrounds/bgd4.jpg); } 
-.bgd5:root { background-image: url(backgrounds/bgd5.jpg); } 
+.bgd5:root { background-image: url(backgrounds/bgd5.jpg); }
+.bgd6:root { background-image: url(backgrounds/bgd6.jpg); }
+.bgd7:root { background-image: url(backgrounds/bgd7.jpg); }
+.bgd8:root { background-image: url(backgrounds/bgd8.jpg); }
+.bgd9:root { background-image: url(backgrounds/bgd9.jpg); }
+.bgd10:root { background-image: url(backgrounds/bgd10.jpg); }
+.bgd11:root { background-image: url(backgrounds/bgd11.jpg); }
+.bgd12:root { background-image: url(backgrounds/bgd12.jpg); }
+ 
 
 .bgn1:root { background-image: url(backgrounds/bgn1.jpg); } 
 .bgn2:root { background-image: url(backgrounds/bgn2.jpg); } 
@@ -14,6 +22,12 @@
 .bgn4:root { background-image: url(backgrounds/bgn4.jpg); } 
 .bgn5:root { background-image: url(backgrounds/bgn5.jpg); } 
 .bgn6:root { background-image: url(backgrounds/bgn6.jpg); } 
+.bgn7:root { background-image: url(backgrounds/bgn7.jpg); } 
+.bgn8:root { background-image: url(backgrounds/bgn8.jpg); } 
+.bgn9:root { background-image: url(backgrounds/bgn9.jpg); } 
+.bgn10:root { background-image: url(backgrounds/bgn10.jpg); } 
+.bgn11:root { background-image: url(backgrounds/bgn11.jpg); } 
+.bgn12:root { background-image: url(backgrounds/bgn12.jpg); } 
 
 /*
 	General stuff
