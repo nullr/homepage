@@ -41,7 +41,7 @@
 html{
 	font: 10pt "Open Sans", "Segoe UI", "Verdana", "Arial";
 	background: url('backgrounds/bg1.jpg') fixed center / cover;
-	background-attachment: scroll;
+	-webkit-overflow-scrolling: touch;
 	height: 100%;
 	min-height: 100%;
 }
