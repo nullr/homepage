@@ -74,32 +74,32 @@ a {
 	text-decoration: none;
 }
 
-a:active,
-a:focus {
+.bracket:active,
+.bracket:focus {
 	outline: none;
 }
 
-a::before,
-a::after{
+.bracket::before,
+.bracket::after{
 	display: inline-block;
 	opacity: 0;
 	transition: transform 0.3s, opacity 0.2s;
 }
 
-a::before{
+.bracket::before{
 	margin-right: 5px;
 	content: '[';
 	transform: translateX(10px);
 }
 
-a::after{
+.bracket::after{
 	margin-left: 5px;
 	content: ']';
 	transform: translateX(-10px);
 }
 
-a:hover::before,
-a:hover::after{
+.bracket:hover::before,
+.bracket:hover::after{
 	opacity: 1;
 	transform: translateX(0px);
 }
