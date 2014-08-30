@@ -106,6 +106,7 @@ a {
 
 
 h1 {
+	white-space: nowrap;
 	color: #FFF;
 	font-weight: normal;
 	transition: color 2s;
