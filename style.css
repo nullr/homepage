@@ -19,6 +19,7 @@
 .bgd10:root { background-image: url(backgrounds/bgd10.jpg); }
 .bgd11:root { background-image: url(backgrounds/bgd11.jpg); }
 .bgd12:root { background-image: url(backgrounds/bgd12.jpg); }
+.bgd13:root { background-image: url(backgrounds/bgd13.jpg); }
  
 
 .bgn1:root { background-image: url(backgrounds/bgn1.jpg); } 
@@ -33,6 +34,9 @@
 .bgn10:root { background-image: url(backgrounds/bgn10.jpg); } 
 .bgn11:root { background-image: url(backgrounds/bgn11.jpg); } 
 .bgn12:root { background-image: url(backgrounds/bgn12.jpg); } 
+.bgn13:root { background-image: url(backgrounds/bgn13.jpg); } 
+.bgn14:root { background-image: url(backgrounds/bgn14.jpg); } 
+.bgn15:root { background-image: url(backgrounds/bgn15.jpg); } 
 
 /*
 	General stuff
