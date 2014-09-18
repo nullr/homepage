@@ -49,6 +49,8 @@ html{
 	min-height: 100%;
 }
 
+/*	filter: url(blur.svg#blur); */
+
 #bottom-margin{
 	clear: both;
 	height: 10px;

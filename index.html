@@ -184,7 +184,7 @@
 				var regex = prequelDate_raw.match(/(\d+)/g);
 				var regexdate = parseInt(regex[1], 10);
 				var regexmonth = parseInt(regex[0], 10);
-				if ((regexmonth == currentmonth) && (currentdate >= regexdate) && (currentdate <= regexdate)) {
+				if ((regexmonth == currentmonth) && (currentdate >= regexdate) && (currentdate <= regexdate+2)) {
 					document.getElementById("prequelContainer").style.display="inline";
 					$('#prequel').FeedEk( {
 						FeedUrl: 'http://www.prequeladventure.com/feed/',
