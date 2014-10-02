@@ -47,9 +47,9 @@
 	height: 100%;
 	background: url('backgrounds/bgd1.jpg') fixed center / cover;
 	z-index: -1;
-	/*filter: url(img/blur.svg#blur);
-	-webkit-filter: url(img/blur.svg#blur);*/
 	position: fixed;
+	/* filter: url(img/blur.svg#blur);
+	-webkit-filter: url(img/blur.svg#blur); */
 }
 
 #toggleBlur{
