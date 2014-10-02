@@ -48,6 +48,7 @@
 	background: url('backgrounds/bgd1.jpg') fixed center / cover;
 	z-index: -1;
 	filter: url(img/blur.svg#blur);
+	position: fixed;
 }
 
 html{
