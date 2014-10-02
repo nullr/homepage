@@ -47,9 +47,27 @@
 	height: 100%;
 	background: url('backgrounds/bgd1.jpg') fixed center / cover;
 	z-index: -1;
-	filter: url(img/blur.svg#blur);
-	-webkit-filter: url(img/blur.svg#blur);
+	/*filter: url(img/blur.svg#blur);
+	-webkit-filter: url(img/blur.svg#blur);*/
 	position: fixed;
+}
+
+#toggleBlur{
+    position: absolute;
+    left: 0;
+    top: 0;
+	transition: opacity 0.8s;
+	opacity: 0.1;
+}
+
+#toggleBlur:hover{
+	transition: opacity 0.8s;
+	opacity: 1;
+}
+
+* {
+	margin:0;
+	padding:0;
 }
 
 html{
@@ -89,6 +107,10 @@ a {
 	color: #FFF;
 	transition: color 2s;
 	text-decoration: none;
+}
+
+h1 {
+	margin: 0.67em;
 }
 
 .bracket:active,

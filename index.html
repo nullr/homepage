@@ -13,9 +13,12 @@
 	</head>
 	
 	<body>
-		<div class="bg"></div>
+		<div class="bg" id="bg"></div>
 		<div class="center">
 			<div id="header">
+				<div id="toggleBlur">
+					<p style="cursor: pointer;" onclick="toggleBlur('test');">Toggle blur</p>
+				</div>
 				<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
 					<div id="weather"></div>
 					<div id="weather2"></div>
@@ -308,6 +311,25 @@
 					});
 				}
 				
+			}
+			
+			function getCookie(name) {
+				var value = "; " + document.cookie;
+				var parts = value.split("; " + name + "=");
+				if (parts.length == 2) return parts.pop().split(";").shift();
+			}
+			
+			function toggleBlur(id){
+				if ( getCookie('blur') != 'true' ) {
+					document.cookie='blur=true';
+				} else {
+					document.cookie='blur=false';
+				}
+				location.reload();
+				// window.alert(getCookie('blur'));
+			}
+			if (getCookie('blur') == 'true') {
+				document.getElementById('bg').style.filter = 'url(img/blur.svg#blur)';
 			}
 		</script>
 	</body>
