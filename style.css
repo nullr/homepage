@@ -42,11 +42,12 @@
 	General stuff
 */
 .bg{
-	position: absolute; top: 0; left: 0;
+	/* position: absolute; */
 	width: 100%;
 	height: 100%;
-	background: url('backgrounds/bgd1.jpg') fixed center / cover;
+	/*background: url('backgrounds/bgd1.jpg') fixed center / cover;*/
 	z-index: -1;
+	background: url('backgrounds/bgd1.jpg') fixed center / cover;
 	position: fixed;
 	/* filter: url(img/blur.svg#blur);
 	-webkit-filter: url(img/blur.svg#blur); */
@@ -154,6 +155,23 @@ h1 {
 /*
 	div blocks
 */
+
+#todo form {
+	height: 100%;
+}
+
+#todobox {
+	width: calc( 100% - 20px );
+	height: calc( 100% - 72px );
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: rgba(0,0,0,0);
+	color: #FFFFFF;
+	border: 0px;
+	resize: none;
+	text-align: center;
+	font: 10pt "Open Sans", "Segoe UI", "Verdana", "Arial";
+}
 
 .center {
 	width: 800px;
