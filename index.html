@@ -17,7 +17,7 @@
 		<div class="center">
 			<div id="header">
 				<div id="toggleBlur">
-					<p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
+					<p style="cursor: pointer;" onclick="document.getElementById('bg').style.WebkitFilter = 'url(img/blur.svg#blur)';">Toggle blur</p>
 				</div>
 				<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
 					<div id="weather"></div>
@@ -345,7 +345,7 @@
 				document.getElementById('bg').style.filter = 'url(img/blur.svg#blur)';
 				// document.getElementById('bg').style.webkitFilter = 'url(img/blur.svg#blur)';
 				// document.getElementById('bg').style.webkitFilter = 'blur(5px)';
-				document.getElementById('bg').style.webkitFilter = 'grayscale(1)';
+				document.getElementById('bg').style.WebkitFilter = 'blur(5px)';
 			}
 			
 			function getCookie(name) {
