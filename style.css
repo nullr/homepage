@@ -4,95 +4,15 @@
 */
 
 /*
-	Backgrounds
+	Sort of reset and general styling
 */
-
-.bgd1 { background-image: url(img/bgd1.jpg) !important; } 
-.bgd2 { background-image: url(img/bgd2.jpg) !important; } 
-.bgd3 { background-image: url(img/bgd3.jpg) !important; } 
-.bgd4 { background-image: url(img/bgd4.jpg) !important; } 
-.bgd5 { background-image: url(img/bgd5.jpg) !important; }
-.bgd6 { background-image: url(img/bgd6.jpg) !important; }
-.bgd7 { background-image: url(img/bgd7.jpg) !important; }
-.bgd8 { background-image: url(img/bgd8.jpg) !important; }
-.bgd9 { background-image: url(img/bgd9.jpg) !important; }
-.bgd10 { background-image: url(img/bgd10.jpg) !important; }
-.bgd11 { background-image: url(img/bgd11.jpg) !important; }
-.bgd12 { background-image: url(img/bgd12.jpg) !important; }
-.bgd13 { background-image: url(img/bgd13.jpg) !important; }
- 
-
-.bgn1 { background-image: url(img/bgn1.jpg) !important; } 
-.bgn2 { background-image: url(img/bgn2.jpg) !important; } 
-.bgn3 { background-image: url(img/bgn3.jpg) !important; } 
-.bgn4 { background-image: url(img/bgn4.jpg) !important; } 
-.bgn5 { background-image: url(img/bgn5.jpg) !important; } 
-.bgn6 { background-image: url(img/bgn6.jpg) !important; } 
-.bgn7 { background-image: url(img/bgn7.jpg) !important; } 
-.bgn8 { background-image: url(img/bgn8.jpg) !important; } 
-.bgn9 { background-image: url(img/bgn9.jpg) !important; } 
-.bgn10 { background-image: url(img/bgn10.jpg) !important; } 
-.bgn11 { background-image: url(img/bgn11.jpg) !important; } 
-.bgn12 { background-image: url(img/bgn12.jpg) !important; } 
-.bgn13 { background-image: url(img/bgn13.jpg) !important; } 
-.bgn14 { background-image: url(img/bgn14.jpg) !important; } 
-.bgn15 { background-image: url(img/bgn15.jpg) !important; } 
-
-/*
-	General stuff
-*/
-.bg{
-	/* position: absolute; */
-	width: 100%;
-	height: 100%;
-	/*background: url('backgrounds/bgd1.jpg') fixed center / cover;*/
-	z-index: -1;
-	background: url('backgrounds/bgd1.jpg') fixed center / cover;
-	position: fixed;
-	/* filter: url(img/blur.svg#blur);
-	-webkit-filter: url(img/blur.svg#blur); */
-}
-
-#toggleBlur{
-    position: absolute;
-    left: 0;
-    top: 0;
-	transition: opacity 0.8s;
-	opacity: 0.1;
-}
-
-#toggleBlur:hover{
-	transition: opacity 0.8s;
-	opacity: 1;
-}
-
 * {
 	margin:0;
 	padding:0;
 }
 
-html{
-	/*background: url('backgrounds/bgd1.jpg') fixed center / cover;*/
-}
-
 body {
 	font: 10pt "Open Sans", "Segoe UI", "Verdana", "Arial";
-}
-
-/*	filter: url(blur.svg#blur); */
-
-#bottom-margin{
-	clear: both;
-	height: 10px;
-}
-
-#title{
-	word-break: break-all;
-	font: 32pt "Open Sans", "Segoe UI", "Verdana", "Arial";
-	text-align: center;
-	color: rgba(255, 255, 255, 1);
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-	line-height: 130px;
 }
 
 li, ul{
@@ -144,7 +64,6 @@ h1 {
 	transform: translateX(0px);
 }
 
-
 h1 {
 	white-space: nowrap;
 	color: #FFF;
@@ -152,30 +71,81 @@ h1 {
 	transition: color 2s;
 }
 
-/*
-	div blocks
-*/
-
-#todo form {
-	height: 100%;
-}
-
-#todobox {
-	width: calc( 100% - 20px );
-	height: calc( 100% - 72px );
-	margin-left: 10px;
-	margin-right: 10px;
-	background-color: rgba(0,0,0,0);
-	color: #FFFFFF;
-	border: 0px;
-	resize: none;
-	text-align: center;
-	font: 10pt "Open Sans", "Segoe UI", "Verdana", "Arial";
-}
-
 .center {
 	width: 800px;
 	margin: 0 auto;
+}
+
+/*
+	Backgrounds
+*/
+.bgd1 { background-image: url(img/bgd1.jpg) !important; } 
+.bgd2 { background-image: url(img/bgd2.jpg) !important; } 
+.bgd3 { background-image: url(img/bgd3.jpg) !important; } 
+.bgd4 { background-image: url(img/bgd4.jpg) !important; } 
+.bgd5 { background-image: url(img/bgd5.jpg) !important; }
+.bgd6 { background-image: url(img/bgd6.jpg) !important; }
+.bgd7 { background-image: url(img/bgd7.jpg) !important; }
+.bgd8 { background-image: url(img/bgd8.jpg) !important; }
+.bgd9 { background-image: url(img/bgd9.jpg) !important; }
+.bgd10 { background-image: url(img/bgd10.jpg) !important; }
+.bgd11 { background-image: url(img/bgd11.jpg) !important; }
+.bgd12 { background-image: url(img/bgd12.jpg) !important; }
+.bgd13 { background-image: url(img/bgd13.jpg) !important; }
+ 
+
+.bgn1 { background-image: url(img/bgn1.jpg) !important; } 
+.bgn2 { background-image: url(img/bgn2.jpg) !important; } 
+.bgn3 { background-image: url(img/bgn3.jpg) !important; } 
+.bgn4 { background-image: url(img/bgn4.jpg) !important; } 
+.bgn5 { background-image: url(img/bgn5.jpg) !important; } 
+.bgn6 { background-image: url(img/bgn6.jpg) !important; } 
+.bgn7 { background-image: url(img/bgn7.jpg) !important; } 
+.bgn8 { background-image: url(img/bgn8.jpg) !important; } 
+.bgn9 { background-image: url(img/bgn9.jpg) !important; } 
+.bgn10 { background-image: url(img/bgn10.jpg) !important; } 
+.bgn11 { background-image: url(img/bgn11.jpg) !important; } 
+.bgn12 { background-image: url(img/bgn12.jpg) !important; } 
+.bgn13 { background-image: url(img/bgn13.jpg) !important; } 
+.bgn14 { background-image: url(img/bgn14.jpg) !important; } 
+.bgn15 { background-image: url(img/bgn15.jpg) !important; } 
+
+.bg{
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: url('backgrounds/bgd1.jpg') fixed center / cover;
+	position: fixed;
+}
+
+#toggleBlur{
+    position: absolute;
+    left: 0;
+    top: 0;
+	transition: opacity 0.8s;
+	opacity: 0.1;
+}
+
+#toggleBlur:hover{
+	transition: opacity 0.8s;
+	opacity: 1;
+}
+
+#bottom-margin{
+	clear: both;
+	height: 10px;
+}
+
+/*
+	Header styling
+*/
+#title{
+	word-break: break-all;
+	font: 32pt "Open Sans", "Segoe UI", "Verdana", "Arial";
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	line-height: 130px;
 }
 
 .top{
@@ -192,6 +162,54 @@ h1 {
 	float: right;
 }
 
+/*
+	Search
+*/
+.searchContainer {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.searchBar {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	width: 200px;
+	height: 20px;
+	padding: 0;
+	text-align: center;
+	outline: 0;
+	transition: all 1s;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.searchBar:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: all 1s;
+	background-position: right center;
+}
+
+.searchBar:focus {
+	background-color: rgba(235, 235, 235, 0.7);
+	color: rgb(20, 20, 20);
+	cursor: text;
+	width: 60%;
+	transition: all 1s;
+	border-color: rgba(0, 0, 0, 0.4);
+}
+
+input:focus::-webkit-input-placeholder{
+    color: transparent!important;
+}
+input:focus::-moz-placeholder{
+    color: transparent!important;
+}
+
+/*
+	Link boxes
+*/
 .d1x1 {
 	text-align: center;
 	height: 190px;
@@ -236,6 +254,23 @@ h1 {
 	height: 100%;
 	padding-left: 5px;
 	padding-right: 15px;
+}
+
+#todo form {
+	height: 100%;
+}
+
+#todobox {
+	width: calc( 100% - 20px );
+	height: calc( 100% - 72px );
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: rgba(0,0,0,0);
+	color: #FFFFFF;
+	border: 0px;
+	resize: none;
+	text-align: center;
+	font: 10pt "Open Sans", "Segoe UI", "Verdana", "Arial";
 }
 
 .d4x2 {
@@ -337,55 +372,8 @@ h1 {
 }
 
 /*
-	Search
+	Responsive!
 */
-
-.searchContainer {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.searchBar {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #FFF;
-	width: 200px;
-	height: 20px;
-	padding: 0;
-	text-align: center;
-	outline: 0;
-	transition: all 1s;
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgba(255, 255, 255, 0.1);
-}
-
-.searchBar:hover {
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.7);
-	transition: all 1s;
-	background-position: right center;
-}
-
-.searchBar:focus {
-	background-color: rgba(235, 235, 235, 0.7);
-	color: rgb(20, 20, 20);
-	cursor: text;
-	width: 60%;
-	transition: all 1s;
-	border-color: rgba(0, 0, 0, 0.4);
-}
-
-input:focus::-webkit-input-placeholder{
-    color: transparent!important;
-}
-input:focus::-moz-placeholder{
-    color: transparent!important;
-}
-
-/*
-	Scaling
-*/
-
 @media screen and (max-width: 840px){
 	html {
 		font-size: 12pt;
@@ -408,6 +396,12 @@ input:focus::-moz-placeholder{
 		height: 80px;
 	}
 	
+	
+	.d1x1 a, .itemTitle a
+	{
+		line-height: 24px;
+	}
+		
 	#weather {
 		font-size: 12pt;
 		width: auto;
@@ -440,6 +434,7 @@ input:focus::-moz-placeholder{
 		border-style: none;
 	} 
 	
+	
 	.d2x1 {
 		margin: 1%;
 		width: 98%;
@@ -451,7 +446,7 @@ input:focus::-moz-placeholder{
 		height: 100%;
 		padding: 0;
 	}
-	
+		
 	.d4x2 {
 		margin: 1%;
 		width: 98%;
