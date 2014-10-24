@@ -114,7 +114,7 @@ h1 {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background: url('backgrounds/bgd1.jpg') fixed center / cover;
+	background: url('img/bgd1.jpg') fixed center / cover;
 	position: fixed;
 }
 
