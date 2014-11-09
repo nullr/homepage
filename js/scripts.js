@@ -1,7 +1,7 @@
 // Load the feeds
 $('#tweakers').FeedEk( {
 	FeedUrl : 'https://tweakers.net/feeds/nieuws.xml',
-	MaxCount : 20,
+	MaxCount : 40,
 	ShowDesc : false,
 	ShowPubDate : false,
 	TitleLinkTarget:'_self',
@@ -9,12 +9,18 @@ $('#tweakers').FeedEk( {
 });
 $('#nos').FeedEk( {
 	FeedUrl : 'http://feeds.nos.nl/nosjournaal',
-	MaxCount : 20,
+	MaxCount : 40,
 	ShowDesc : false,
 	ShowPubDate : false,
 	TitleLinkTarget:'_self',
 });
-
+$('#nu').FeedEk( {
+	FeedUrl : 'http://www.nu.nl/rss/Algemeen',
+	MaxCount : 40,
+	ShowDesc : false,
+	ShowPubDate : false,
+	TitleLinkTarget:'_self',
+});
 // Load the date for Prequel
 $('#prequelDate').FeedEk( {
 	FeedUrl: 'http://www.prequeladventure.com/feed/',
@@ -39,8 +45,9 @@ $(window).load(function(){
 	// Display Prequel after an update
 	var prequelDate_raw = document.querySelector(".itemDate").innerHTML;
 	var regex = prequelDate_raw.match(/(\d+)/g);
-	var regexdate = parseInt(regex[1], 10);
-	var regexmonth = parseInt(regex[0], 10);
+	var regexdate = parseInt(regex[0], 10);
+	var regexmonth = parseInt(regex[1], 10);
+	window.alert(prequelDate_raw + "\n" + regexdate + " " + regexmonth);
 	if ((regexmonth == currentmonth) && (currentdate >= regexdate) && (currentdate <= regexdate+2)) {
 		document.getElementById("prequelContainer").style.display="inline";
 		$('#prequel').FeedEk( {
