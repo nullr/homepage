@@ -47,7 +47,7 @@ $(window).load(function(){
 	var regex = prequelDate_raw.match(/(\d+)/g);
 	var regexdate = parseInt(regex[0], 10);
 	var regexmonth = parseInt(regex[1], 10);
-	window.alert(prequelDate_raw + "\n" + regexdate + " " + regexmonth);
+	//window.alert(prequelDate_raw + "\n" + regexdate + " " + regexmonth);
 	if ((regexmonth == currentmonth) && (currentdate >= regexdate) && (currentdate <= regexdate+2)) {
 		document.getElementById("prequelContainer").style.display="inline";
 		$('#prequel').FeedEk( {
