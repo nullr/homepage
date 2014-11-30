@@ -24,7 +24,7 @@
 					<div id="weather2"></div>
 				</div>
 				<div class="top" id="title">
-					<p class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
+					<p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
 				</div>
 			</div>
 			<div class="searchContainer">
@@ -153,13 +153,13 @@
 			
 			// Use hours to modify the title text
 			if ( hour >= 3 && hour < 10 ) {
-				document.getElementById("title").innerHTML = "おはよう!";
+				document.getElementById("titletext").innerHTML = "おはよう!";
 			}
 			if ( hour >= 10 && hour < 18 ) {
-				document.getElementById("title").innerHTML = "こんにちは!";
+				document.getElementById("titletext").innerHTML = "こんにちは!";
 			}
 			if ( hour >= 18 || hour < 3 ) {
-				document.getElementById("title").innerHTML = "こんばんは!";
+				document.getElementById("titletext").innerHTML = "こんばんは!";
 			}
 		</script>
 		
