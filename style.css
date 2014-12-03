@@ -251,7 +251,7 @@ input:focus::-moz-placeholder{
 .d2x1Child {
 	width: 100%;
 	overflow: auto;
-	height: 90%;
+	height: calc(100% - 50%);
 	padding-left: 5px;
 	padding-right: 15px;
 }
