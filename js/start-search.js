@@ -1,23 +1,4 @@
 $(document).ready(function(){
-	
-	//opacity animation
-    $('#masthead').mouseenter(function() {
-        $(this).stop().fadeTo("slow", 1.0);
-        $('#fini').stop().fadeTo("slow", 1.0);
-    });
-    $('#masthead').mouseleave(function() {
-        $(this).stop().fadeTo("slow", 0.2);
-        $('#fini').stop().fadeTo("slow", 0.2);
-    });
-    //opacity animation
-    $('#fini').mouseenter(function() {
-        $(this).stop().fadeTo("slow", 1.0);
-        $('#masthead').stop().fadeTo("slow", 1.0);
-    });
-    $('#fini').mouseleave(function() {
-        $(this).stop().fadeTo("slow", 0.2);
-        $('#masthead').stop().fadeTo("slow", 0.2);
-    });
 
 	var config = {
 		siteURL		: 'google.com',
@@ -33,6 +14,7 @@ $(document).ready(function(){
       var hash = window.location.hash.substring(1);
       $('#searchBar').val(hash);
       $('#header').slideUp();
+	  $('#searchForm').css('paddingTop', '20px');
       googleSearch();
     }
     
@@ -41,6 +23,7 @@ $(document).ready(function(){
 
 	$('#searchForm').submit(function(){
 		$('#header').slideUp();
+		$('#searchForm').css('paddingTop', '20px');
         googleSearch();
 		return false;
 	});
@@ -54,12 +37,14 @@ $(document).ready(function(){
             $('#searchBar').data('fu','bar');
             $('#fubar').val(s1)
             $('#header').slideUp();
+			$('#searchForm').css('paddingTop', '20px');
             googleSearch();
         } else {
             if($('#searchBar').data('fu') == 'bar') {
                 if(l1 <= l2 - 1){
                     if(l1 == 0){
                         $('#header').slideDown();
+						$('#searchForm').css('paddingTop', '0px');
                         $('#resultsDiv').html('');
                         $('#fubar').val('fubar');
                         $('#searchBar').data('fu','');
@@ -170,8 +155,8 @@ $(document).ready(function(){
 			case 'GwebSearch':
 				arr = [
 					'<div class="webResult">',
-					'<h3><a href="',r.unescapedUrl,'">',r.title,'</a></h3>',
-					'<a class="url" href="',r.unescapedUrl,'">',r.unescapedUrl,'</a>',
+					'<h3><a class="bracket" href="',r.unescapedUrl,'">',r.title,'</a></h3>',
+					'<a class="bracket" class="url" href="',r.unescapedUrl,'">',r.unescapedUrl,'</a>',
                     '<p>',r.content,'</p>',
 					'</div>'
 				];

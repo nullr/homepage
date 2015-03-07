@@ -233,8 +233,8 @@ p.notFound{
 	width: 95%;
 }
 
-.webResult{margin-bottom:20px;padding-left:10px;border-left:2px solid #3B4245;background-color:RGBA(0,0,0,0.1)}
-.webResult:hover{border-left:2px solid #d8d8d8;}
+.webResult{margin-bottom:20px;padding:10px 10px 10px 10px;border-left:2px solid #3B4245;background-color:RGBA(0,0,0,0.5);transition:background-color 2s;}
+.webResult:hover{border-left:2px solid #d8d8d8;background-color:RGBA(0,0,0,0.6);transition:background-color 2s;}
 .webResult h3{font-size:100%;margin:0;}
 .webResult h3 b{ color:#fff; }
 .webResult h3 a{ }

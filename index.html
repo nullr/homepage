@@ -18,24 +18,22 @@
 			<p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
 		</div>
 		<div class="center">
-			<div id="body" valign="top">
-				<div id="header">
-					<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
-						<div id="weather"></div>
-						<div id="weather2"></div>
-					</div>
-					<div class="top" id="title">
-						<p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
-					</div>
+			<div id="header">
+				<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
+					<div id="weather"></div>
+					<div id="weather2"></div>
 				</div>
-				<form id="searchForm" method="post" autocomplete="off">
-					<fieldset>
-						<input id="searchBar" type="text" placeholder="Google Search" autofocus />
-						<input type="hidden" value="fubar" id="fubar" />
-						<input type="submit" value="Search" id="submitButton" />
-					</fieldset>
-				</form>
+				<div class="top" id="title">
+					<p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
+				</div>
 			</div>
+			<form id="searchForm" method="post" autocomplete="off">
+				<fieldset>
+					<input id="searchBar" type="text" placeholder="Google Search" autofocus />
+					<input type="hidden" value="fubar" id="fubar" />
+					<input type="submit" value="Search" id="submitButton" />
+				</fieldset>
+			</form>
 			<blockquote>
 				<div id="resultsDiv"></div>
 			</blockquote>
