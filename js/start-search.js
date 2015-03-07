@@ -88,7 +88,7 @@ $(document).ready(function(){
 		}
 		
 		// URL of Google's AJAX search API
-		var apiURL = 'http://ajax.googleapis.com/ajax/services/search/'+settings.type+'?v=1.0&callback=?';
+		var apiURL = '//ajax.googleapis.com/ajax/services/search/'+settings.type+'?v=1.0&callback=?';
 		var resultsDiv = $('#resultsDiv');
 		
 		$.getJSON(apiURL,{q:settings.term,rsz:settings.perPage,start:settings.page*settings.perPage},function(r){
