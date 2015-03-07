@@ -14,25 +14,32 @@
 	
 	<body>
 		<div class="bg" id="bg"></div>
+		<div id="toggleBlur">
+			<p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
+		</div>
 		<div class="center">
-			<div id="header">
-				<div id="toggleBlur">
-					<p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
+			<div id="body" valign="top">
+				<div id="header">
+					<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
+						<div id="weather"></div>
+						<div id="weather2"></div>
+					</div>
+					<div class="top" id="title">
+						<p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
+					</div>
 				</div>
-				<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
-					<div id="weather"></div>
-					<div id="weather2"></div>
-				</div>
-				<div class="top" id="title">
-					<p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
-				</div>
+				<form id="searchForm" method="post" autocomplete="off">
+					<fieldset>
+						<input id="searchBar" type="text" placeholder="Google Search"/>
+						<input type="hidden" value="fubar" id="fubar" />
+						<input type="submit" value="Search" id="submitButton" />
+					</fieldset>
+				</form>
 			</div>
-			<div class="searchContainer">
-                <form class="searchForm" method="get" action="https://google.com/search">
-                    <input class="searchBar" type="text" name="q" placeholder="Google Search" autofocus />
-                </form>
-            </div>
-			
+			<blockquote>
+				<div id="resultsDiv"></div>
+			</blockquote>
+		
 			<div class="d1x1">
 				<h1 class="bracket">News</h1>				
 				<a href="http://www.tweakers.net/">Tweakers</a> <br />
@@ -41,11 +48,10 @@
 			</div>
 			
 			<div class="d1x1">
-				<h1><h1 class="bracket">Forums</h1></h1>
-				<a href="http://boards.4chan.org/g/">/g/ - Tech Support</a> <br />
-				<a href="https://8chan.co/tech/">/tech/</a> <br />
-				<a href="http://gathering.tweakers.net/">GoT</a> <br />
-				<a href="http://www.reddit.com/">Ssssh</a>
+				<h1><h1 class="bracket">Boards</h1></h1>
+				<a href="http://boards.4chan.org/g/">/g/ - Technology</a> <br />
+				<a href="https://8chan.co/tech/">/tech/ - Technology</a> <br />
+				<a href="https://8chan.co/tech/">/aneki/</a> <br />
 			</div>
 			
 			<div class="d1x1">
@@ -53,23 +59,22 @@
 				<a href="https://www.youtube.com/feed/subscriptions/">YouTube</a> <br />
 				<a href="http://www.soundcloud.com/">SoundCloud</a> <br />
 				<a href="http://www.animebytes.tv/">AnimeBytes</a> <br />
-				<a href="http://www.thepiratebay.se/">The Pirate Bay</a>
 			</div>
 			
 			<div class="d1x1">
 				<h1 class="bracket">Fontys</h1>
-				<a href="https://portal.fontys.nl/">Fontys</a> <br />
-				<a href="https://portal.fhict.nl/">FHICT</a> <br />
 				<a href="https://mail.fontys.nl/owa/">E-mail</a> <br />
 				<a href="https://fhict.instructure.com/">Canvas</a> <br />
+				<a href="https://portal.fhict.nl/">FHICT Portal</a> <br />
+				<a href="https://git.fhict.nl/">FHICT Git</a> <br/>
 			</div>
 		
 			<div class="d1x1">
-				<h1 class="bracket">Subs</h1>
+				<h1 class="bracket">Web</h1>
+				<a href="http://www.xkcd.com/">xkcd</a> <br />
 				<a href="http://what-if.xkcd.com/">What If?</a> <br />
 				<a href="http://www.prequeladventure.com/">PREQUEL</a> <br />
 				<a href="http://www.mangareader.net/its-not-my-fault-that-im-not-popular">WataMote</a> <br />
-				<a href="http://idforums.net/index.php?showforum=2">Initial D</a>
 			</div>
 			
 			<div class="d1x1">
@@ -80,7 +85,7 @@
 			
 			<div class="d1x1">
 				<h1 class="bracket">Misc</h1>
-				<a href="http://www.nederland.fm/">NL.fm</a> <br />
+				<a href="http://translate.google.com/">Translate</a> <br />
 				<a href="http://www.9292.nl/">9292</a> <br />
 				<a href="http://pomf.se/">Pomf.se</a> <br />
 				<a href="https://github.com/E66666666/homepage">GitHub</a>
@@ -164,12 +169,20 @@
 		</script>
 		
 		<!--
-			Load some JS, ignore Google PageSpeed hints.
+			Load some JS
 		-->
 				
+		<script src="js/jquery-1.7.min.js"></script>
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/FeedEk.js"></script>
 		<script src="js/jquery.simpleWeather.min.js"></script>
 		<script src="js/scripts.js"></script>
+		
+		<!--
+			Search, need to unfuck
+		-->
+		<script src="js/script.js"></script>
+		<script src="js/start-search.js"></script>
+
 	</body>
 </html>

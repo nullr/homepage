@@ -1,11 +1,11 @@
 /*
-	Homepage by Emily !66666666Ok/E66666666
-	pls (dont) steel
-*/
+ *	Homepage by Emily !66666666Ok/E66666666
+ *	pls (dont) steel
+ */
 
 /*
-	Sort of reset and general styling
-*/
+ *	Sort of reset and general styling
+ */
 * {
 	margin:0;
 	padding:0;
@@ -77,8 +77,8 @@ h1 {
 }
 
 /*
-	Backgrounds
-*/
+ *	Backgrounds
+ */
 .bgd1 { background-image: url(img/bgd1.jpg) !important; } 
 .bgd2 { background-image: url(img/bgd2.jpg) !important; } 
 .bgd3 { background-image: url(img/bgd3.jpg) !important; } 
@@ -137,8 +137,8 @@ h1 {
 }
 
 /*
-	Header styling
-*/
+ *	Header styling
+ */
 #title{
 	word-break: break-all;
 	font: 32pt "Open Sans", "Segoe UI", "Verdana", "Arial";
@@ -163,14 +163,14 @@ h1 {
 }
 
 /*
-	Search
-*/
-.searchContainer {
+ *	Search
+ */
+#searchForm {
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-.searchBar {
+#searchBar {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	width: 200px;
@@ -207,9 +207,45 @@ input:focus::-moz-placeholder{
     color: transparent!important;
 }
 
+fieldset{
+	border-style: none;
+}
+
+#submitButton{
+	display: none;
+	text-transform:uppercase;
+    letter-spacing:8px;
+	border:none;
+	cursor:pointer;
+    font-size:130%;
+    background:#3B4245;
+    color:#dfdfdf;
+    width:20%;
+    text-shadow: #000 1px 1px 1px;
+}
+
+p.notFound{
+	text-align:center;
+}
+
+#resultsDiv {
+	margin: auto;
+	width: 95%;
+}
+
+.webResult{margin-bottom:20px;padding-left:10px;border-left:2px solid #3B4245;background-color:RGBA(0,0,0,0.1)}
+.webResult:hover{border-left:2px solid #d8d8d8;}
+.webResult h3{font-size:100%;margin:0;}
+.webResult h3 b{ color:#fff; }
+.webResult h3 a{ }
+.webResult p{ line-height:1.5;padding:10px 0 0 10px;margin:0;font-size:90%;}
+.webResult p b{ color:white;}
+#content a.url {color:#656667;font-size:80%;margin-left:10px;border:0;}
+#content a.url:hover {color:#dfdfdf;}
+
 /*
-	Link boxes
-*/
+ *	Link boxes
+ */
 .d1x1 {
 	text-align: center;
 	height: 190px;
@@ -370,8 +406,8 @@ input:focus::-moz-placeholder{
 }
 
 /*
-	Responsive!
-*/
+ *	Responsive!
+ */
 @media screen and (max-width: 840px){
 	html {
 		font-size: 12pt;
