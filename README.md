@@ -14,5 +14,6 @@ Features:
 * Time-dependent random backgrounds
 * Blurrable background
 * Todo-notes (saved with JavaScript cookies)
+* In-Page Google Search results (taken from somebodies "homepagedark" example)
 
 Live at [http://e66666666.github.io/homepage/](http://e66666666.github.io/homepage/)
