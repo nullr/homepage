@@ -2,6 +2,16 @@
  *	Homepage by Emily !66666666Ok/E66666666
  *	pls (dont) steel
  */
+ 
+/*
+ *	Font
+ */
+@font-face {
+	font-family: 'YutaCoco';
+	src: url(YutaCoco-Demi-Bold.ttf) format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
 
 /*
  *	Sort of reset and general styling
@@ -141,7 +151,7 @@ h1 {
  */
 #title{
 	word-break: break-all;
-	font: 32pt "Open Sans", "Segoe UI", "Verdana", "Arial";
+	font: 32pt "YutaCoco", "Open Sans", "Segoe UI", "Verdana", "Arial";
 	text-align: center;
 	color: rgba(255, 255, 255, 1);
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
