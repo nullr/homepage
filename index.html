@@ -175,14 +175,16 @@
 			var colorBrightness;
 			if ( hour <= 12 ) {
 				colorBrightness = 91 + (hour/12)*127
+				blue = colorBrightness + 37;
 			} else
 			{
-				colorBrightness = 91 + (hour/24)*127
+				colorBrightness = 255-(91 + (hour/24)*127)
+				blue = colorBrightness + 244;
 			}
 			
 			var meta = document.createElement('meta');
 			meta.name = "theme-color";
-			meta.content = "rgb("+Math.round(colorBrightness-64) + "," + Math.round(colorBrightness) + "," + 255 + ")";
+			meta.content = "rgb("+Math.round(colorBrightness-37) + "," + Math.round(colorBrightness) + "," + blue + ")";
 			document.getElementsByTagName('head')[0].appendChild(meta);
 		</script>
 		
