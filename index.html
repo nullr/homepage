@@ -171,6 +171,8 @@
 			}
 			
 			// Generate Chrome tab color metatags.
+			
+			var colorBrightness;
 			if ( hour <= 12 ) {
 				colorBrightness = 91 + (hour/12)*127
 			} else
@@ -180,7 +182,7 @@
 			
 			var meta = document.createElement('meta');
 			meta.name = "theme-color";
-			meta.content = "rgb("+colorBrightness + "," + colorBrightness + "," + 255 + ")";
+			meta.content = "rgb("+Math.round(colorBrightness) + "," + Math.round(colorBrightness) + "," + 255 + ")";
 			document.getElementsByTagName('head')[0].appendChild(meta);
 		</script>
 		
