@@ -4,7 +4,7 @@ Homepage
 ![alt tag](screenshots/preview4.png "Homepage preview - desktop")
 * [Preview - search](screenshots/preview4search.png)
 * [Preview - mobile](screenshots/phone_preview3.png)
-* [Preview - mobile Chrome tabs](screenshots/phone_preview3.png)
+* [Preview - mobile Chrome tabs](screenshots/phone_preview3tabs.png)
 
 A homepage with a bunch of links. Usable on phones, tablets and regular screen sizes. Made with html, css and javascript. (jquery, FeedEk, simpleWeather).
 
