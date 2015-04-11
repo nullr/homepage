@@ -179,12 +179,12 @@
 			} else
 			{
 				colorBrightness = 255-(91 + (hour/24)*127)
-				blue = colorBrightness + 244;
+				blue = colorBrightness + 37;
 			}
 			
 			var meta = document.createElement('meta');
 			meta.name = "theme-color";
-			meta.content = "rgb("+Math.round(colorBrightness-37) + "," + Math.round(colorBrightness) + "," + blue + ")";
+			meta.content = "rgb("+Math.round(colorBrightness-37) + "," + Math.round(colorBrightness) + "," + Math.round(blue) + ")";
 			document.getElementsByTagName('head')[0].appendChild(meta);
 		</script>
 		
