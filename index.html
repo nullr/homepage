@@ -171,14 +171,16 @@
 			}
 			
 			// Generate Chrome tab color metatags.
-			var colors = [0, 0, 0];
-			var color = parseInt(255/24*hour);
-			for(var i = 0; i < colors.length; i++) {
-				colors[i] = color;
+			if ( hour <= 12 ) {
+				colorBrightness = 127 + (hour/12)*127
+			} else
+			{
+				colorBrightness = 127 + (24-hour/12)*127
 			}
+			
 			var meta = document.createElement('meta');
 			meta.name = "theme-color";
-			meta.content = "rgb("+colors[0] + "," + colors[1] + "," + colors[2] + ")";
+			meta.content = "rgb("+colorBrightness + "," + colorBrightness + "," + colorBrightness + ")";
 			document.getElementsByTagName('head')[0].appendChild(meta);
 		</script>
 		
