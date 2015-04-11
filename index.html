@@ -145,12 +145,6 @@
 		<div id="bottom-margin"></div>
 		
 		<script type="text/javascript">
-			// Generate Chrome tab color metatags.
-			var meta = document.createElement('meta');
-			meta.name = "theme-color";
-			meta.content = "#ff0000";
-			document.getElementsByTagName('head')[0].appendChild(meta);
-		
 			// Randomize background
 			var date = new Date();
 			var hour = date.getHours();
@@ -175,6 +169,17 @@
 			if ( hour >= 18 || hour < 3 ) {
 				document.getElementById("titletext").innerHTML = "こんばんは!";
 			}
+			
+			// Generate Chrome tab color metatags.
+			var colors = [0, 0, 0];
+			var color = parseInt(255/24*hour);
+			for(var i = 0; i < colors.length; i++) {
+				colors[i] = color;
+			}
+			var meta = document.createElement('meta');
+			meta.name = "theme-color";
+			meta.content = "rgb("+colors[0] + "," + colors[1] + "," + colors[2] + ")";
+			document.getElementsByTagName('head')[0].appendChild(meta);
 		</script>
 		
 		<!--
