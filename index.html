@@ -158,7 +158,7 @@
 			}
 			
 			// Use hours to modify the title text
-			if ( hour >= 3 && hour < 10 ) {
+			/*if ( hour >= 3 && hour < 10 ) {
 				document.getElementById("titletext").innerHTML = "おはよう!";
 			}
 			if ( hour >= 10 && hour < 18 ) {
@@ -166,7 +166,9 @@
 			}
 			if ( hour >= 18 || hour < 3 ) {
 				document.getElementById("titletext").innerHTML = "こんばんは!";
-			}
+			}*/
+			
+			$("#titletext").load("http://whatthecommit.com/index.txt");
 			
 			// Generate Chrome tab color metatags.
 			
