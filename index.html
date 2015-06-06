@@ -171,6 +171,7 @@
 			var invocation = new XMLHttpRequest();
 			var url = 'http://whatthecommit.com/index.txt';
 			invocation.open('GET', url, true);
+		    invocation.setRequestHeader('Access-Control-Allow-Headers', '*');
 			invocation.setRequestHeader('Access-Control-Allow-Origin', '*');
 			invocation.onload = function() {
 				document.getElementById("titletext").innerHTML = invocation.responseText;
