@@ -180,11 +180,10 @@
 			invocation.send(null);*/
 			
 			// Generate Chrome tab color metatags.
-			
 			var colorBrightness;
 			if ( hour <= 11 ) {
 				colorBrightness = 91 + (hour/11)*127
-				blue = colorBrightness + 37;
+				blue = colorBrightness + 37 + (11-hour)*3;
 			} else
 			{
 				colorBrightness = 91 + (1-((hour-12)/11))*127
@@ -200,7 +199,6 @@
 		<!--
 			Load some JS
 		-->
-				
 		<script src="js/jquery-1.7.min.js"></script>
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/FeedEk.js"></script>
@@ -208,7 +206,7 @@
 		<script src="js/scripts.js"></script>
 		
 		<!--
-			Search, need to unfuck
+			Search, need to unfuck, but it werks.
 		-->
 		<script src="js/script.js"></script>
 		<script src="js/start-search.js"></script>
