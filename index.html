@@ -168,6 +168,14 @@
 				document.getElementById("titletext").innerHTML = "こんばんは!";
 			}*/
 			
+			var invocation = new XMLHttpRequest();
+			var url = 'http://whatthecommit.com/index.txt';
+			invocation.open('GET', url, true);
+			invocation.onload = function() {
+				document.getElementById("titletext").innerHTML = invocation.responseText;
+			}
+			invocation.send(null);
+			
 			// Generate Chrome tab color metatags.
 			
 			var colorBrightness;
@@ -201,9 +209,6 @@
 		-->
 		<script src="js/script.js"></script>
 		<script src="js/start-search.js"></script>
-		<script>
-			$("#titletext").load("http://whatthecommit.com/index.txt");
-		</script>
 
 	</body>
 </html>
