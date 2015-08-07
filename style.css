@@ -6,12 +6,12 @@
 /*
  *	Font
  */
-/*@font-face {
+@font-face {
 	font-family: 'YutaCoco';
 	src: url(YutaCoco-Demi-Bold.ttf) format('truetype');
 	font-weight: normal;
     font-style: normal;
-}*/
+}
 
 /*
  *	Sort of reset and general styling
